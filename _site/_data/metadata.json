@@ -1,0 +1,27 @@
+{
+  "title": "",
+  "description": "This is multicentre randomized controlled trial",
+  "url": "example.com",
+  "feed": {
+    "summary": "Summary of the trial. Links to relevant publications. Educational resources including standard operating procedures. Link to RedCap database for entering data.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://save-icu.com/feed.xml",
+    "id": "https://save-icu.com/seven"
+  },
+  "author": {
+    "name": "Marat Slessarev",
+    "bio": "Marat Slessarev",
+    "social": {
+      "email": "info@save-icu.com",
+      "linkedin": "",
+      "facebook": "https://www.facebook.com/marat.slessarev",
+      "github": "",
+      "twitter": "https://twitter.com/maratslessarev",
+      "dribbble": "",
+      "flickr": "",
+      "youtube": "",
+      "instagram": ""
+    }
+  }
+}

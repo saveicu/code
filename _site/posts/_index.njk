@@ -1,0 +1,32 @@
+---
+layout: layouts/page.njk
+hero: /images/posts/dna.jpg
+tags:
+  - nav
+iconclass: far fa-file-alt
+pagination:
+  data: collections.posts
+  size: 10
+title: Posts
+navtitle: Posts
+permalink: /posts/{{pagination.pageNumber}}/
+---
+
+{% include "pagination.njk" %}
+
+{%- for item in pagination.items %}
+  {% set defaultURL = '' %}
+  {% if item.data.links[0] %}
+    {% for name, link in item.data.links[0] %}
+      {% set defaultURL = link %}
+    {% endfor %}
+  {% else %}
+      {% set defaultURL = item.url %}
+  {% endif %}
+
+  {% include "items.njk" %}
+
+{% endfor -%}
+
+{% include "pagination.njk" %}
+
